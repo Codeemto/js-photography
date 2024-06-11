@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="icon" href="images/favicon.svg" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9J2MOjmj4mr9MECpbbtG0vKYmZTl7L8nKr7Pn/+vfXSk1m5N0p5TR7R" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.3.0/css/lightgallery.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Gallery</title>
+  </head>
+  <body>
+
+    <div class="container-fluid p-0 m-0">
+        
+      
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow" id="nav">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#" id="brand">
+                <img src="images/js-logo.png" alt="Joe's Photography Logo" style="height: 120px;">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="prices.html">Prices & Packages</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="testimonials.html">Testimonials</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+        <section class="container">
+            <h2>Gallery</h2>
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="weddings-tab" data-bs-toggle="tab" href="#weddings" role="tab">Weddings</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="family-tab" data-bs-toggle="tab" href="#family" role="tab">Family</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="commercial-tab" data-bs-toggle="tab" href="#commercial" role="tab">Commercial</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="nature-tab" data-bs-toggle="tab" href="#nature" role="tab">Nature</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="weddings" role="tabpanel">
+                    <div class="row" id="weddings-gallery"></div>
+                </div>
+                <div class="tab-pane fade" id="family" role="tabpanel">
+                    <div class="row" id="family-gallery"></div>
+                </div>
+                <div class="tab-pane fade" id="commercial" role="tabpanel">
+                    <div class="row" id="commercial-gallery"></div>
+                </div>
+                <div class="tab-pane fade" id="nature" role="tabpanel">
+                    <div class="row" id="nature-gallery"></div>
+                </div>
+            </div>
+        </section>
+
+      
+        <footer class="bg-light text-center text-lg-start">
+            <div class="container p-4">
+              <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                  <h5 class="text-uppercase">Follow Us</h5>
+                  <a href="#" class="me-4 text-reset">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="#" class="me-4 text-reset">
+                    <i class="fab fa-pinterest"></i>
+                  </a>
+                  <a href="#" class="me-4 text-reset">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a href="#" class="me-4 text-reset">
+                    <i class="fab fa-tiktok"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="text-center p-3 bg-light">
+              © 2024 Jo Smith Photography
+            </div>
+          </footer>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.3.0/lightgallery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.3.0/plugins/thumbnail/lg-thumbnail.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.3.0/plugins/zoom/lg-zoom.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
