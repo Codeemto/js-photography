@@ -6,111 +6,7 @@
     <link rel="icon" href="images/favicon.svg" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Gallery</title>
-</head>
-<body>
-
-<div class="container-fluid p-0 m-0">
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow" id="nav">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#" id="brand">
-            <img src="images/js-logo.png" alt="Joe's Photography Logo" style="height: 120px;">
-          </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="gallery.html">Gallery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="prices.html">Prices & Packages</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="testimonials.html">Testimonials</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <section class="container">
-        <h2>Contact</h2>
-        <address>
-            987 Brook Street, Dundee, DD5 2EA<br>
-            <a href="mailto:enquire@josmithphoto.com">enquire@josmithphoto.com</a><br>
-            X @josmithphoto and Instagram @josmithphoto
-        </address>
-        <button id="contact-button" class="btn btn-primary">Enquire Now</button>
-        <div id="map" style="height: 400px;"></div>
-    </section>
-    
-</div>
-
-<footer class="bg-light text-center text-lg-start">
-    <div class="container p-4">
-        <div class="row justify-content-center">
-            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-                <h5 class="text-uppercase">Follow Us</h5>
-                <a href="#" class="me-4 text-reset">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="#" class="me-4 text-reset">
-                    <i class="fab fa-pinterest"></i>
-                </a>
-                <a href="#" class="me-4 text-reset">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="#" class="me-4 text-reset">
-                    <i class="fab fa-tiktok"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="text-center p-3 bg-light">
-        © 2024 Jo Smith Photography
-    </div>
-</footer>
-
-<div class="modal fade" id="enquiryModal" tabindex="-1" role="dialog" aria-labelledby="enquiryModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="enquiryModalLabel">Enquiry Form</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <form id="enquiry-form">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" class="form-control" id="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" class="form-control" id="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea class="form-control" id="message" rows="3" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-  <style>
+     <style>
       body {
     font-family: Arial, sans-serif;
     background: linear-gradient(to right, #f8f9fa, #e0e0e0);
@@ -224,9 +120,175 @@ footer a:hover {
 }
 
     </style>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Gallery</title>
+</head>
+<body>
+
+<div class="container-fluid p-0 m-0">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow" id="nav">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#" id="brand">
+            <img src="images/js-logo.png" alt="Joe's Photography Logo" style="height: 120px;">
+          </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="prices.html">Prices & Packages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="testimonials.html">Testimonials</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="container">
+        <h2>Contact</h2>
+        <address>
+            987 Brook Street, Dundee, DD5 2EA<br>
+            <a href="mailto:enquire@josmithphoto.com">enquire@josmithphoto.com</a><br>
+            X @josmithphoto and Instagram @josmithphoto
+        </address>
+        <button id="contact-button" class="btn btn-primary">Enquire Now</button>
+        <div id="map" style="height: 400px;"></div>
+    </section>
+    
+</div>
+
+<footer class="bg-light text-center text-lg-start">
+    <div class="container p-4">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Follow Us</h5>
+                <a href="#" class="me-4 text-reset">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="me-4 text-reset">
+                    <i class="fab fa-pinterest"></i>
+                </a>
+                <a href="#" class="me-4 text-reset">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="me-4 text-reset">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="text-center p-3 bg-light">
+        © 2024 Jo Smith Photography
+    </div>
+</footer>
+
+<div class="modal fade" id="enquiryModal" tabindex="-1" role="dialog" aria-labelledby="enquiryModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="enquiryModalLabel">Enquiry Form</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="enquiry-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+ 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    const API_KEY = "C7rXGYecSfFksT_rO8D-ii94tEbmUvGE8xYCXqILOH4";
+const galleries = {
+    'weddings': 'wedding',
+    'family': 'family',
+    'commercial': 'commercial',
+    'nature': 'nature'
+};
+
+document.addEventListener("DOMContentLoaded", function() {
+    for (const [galleryId, query] of Object.entries(galleries)) {
+        fetchPhotos(query, `${galleryId}-gallery`);
+    }
+});
+
+function fetchPhotos(query, galleryId) {
+    const tempUrl = `https://api.unsplash.com/search/photos?query=${query}&client_id=${API_KEY}&per_page=30`;
+
+    fetch(tempUrl)
+        .then(response => response.json())
+        .then(data => {
+            const gallery = document.getElementById(galleryId);
+            gallery.innerHTML = data.results.map(photo => `
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <a href="${photo.urls.full}" data-lg-size="${photo.width}-${photo.height}">
+                        <img src="${photo.urls.thumb}" alt="${photo.alt_description}" class="img-fluid" />
+                    </a>
+                </div>
+            `).join('');
+            lightGallery(gallery, {
+                plugins: [lgThumbnail, lgZoom],
+                speed: 500
+            });
+        })
+        .catch(error => {
+            console.error('Error fetching photos:', error);
+            const gallery = document.getElementById(galleryId);
+            gallery.innerHTML = "<h4>Unable to fetch data.</h4>";
+        });
+}
+
+document.getElementById('contact-button').addEventListener('click', function() {
+    $('#enquiryModal').modal('show');
+});
+
+function initMap() {
+    
+    const location = { lat: 56.462, lng: -2.9707 }; 
+
+    
+    const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 12,
+        center: location,
+    });
+
+   
+    const marker = new google.maps.Marker({
+        position: location,
+        map: map,
+    });
+}
+
 <script src="js/script.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBx1OkA5YDHPXGOIJho8kmSO8cHHBo60w&callback=initMap" async defer></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
